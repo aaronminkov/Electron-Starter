@@ -1,0 +1,19 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "A foundation for any and all Electron applications.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronminkov/Electron-Starter.git"
+  },
+  "author": "Aaron Minkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronminkov/Electron-Starter/issues"
+  },
+  "homepage": "https://github.com/aaronminkov/Electron-Starter#readme"
+}
