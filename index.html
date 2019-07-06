@@ -2,43 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>H2O</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Electron Starter by Aaron Minkov</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- I'm just importing Font Awesome so that we have access to some icons. -->
   </head>
-  <body class="noselect">
-    <nav>
-      <div class="nav-menu">
-        <div class="logo">
-  
-        </div>
-        <h4 data-tab="home" class="menu-option active">
-          <i class="fas fa-home"></i> Home
-        </h4>
-        <h4 data-tab="createtasks" class="menu-option">
-          <i class="fas fa-plus-circle"></i> Create Tasks
-        </h4>
-        <h4 data-tab="profiles" class="menu-option">
-          <i class="fas fa-user"></i> Profiles
-        </h4>
-        <h4 data-tab="proxies" class="menu-option">
-          <i class="fas fa-server"></i></i> Proxies
-        </h4>
-        <h4 data-tab="statistics" class="menu-option">
-          <i class="fas fa-chart-bar"></i> Statistics
-        </h4>
-        <h4 data-tab="settings" class="menu-option">
-          <i class="fas fa-cog"></i> Settings
-        </h4>
+  <body class="noselect"> 
+    <!-- Notice the class here. In style.css, I define the .noselect class and 
+    prevent users from selecting within the main window. This is to enhance user
+    experience! -->
+    <div class="nav">
+      <h4>Electron Starter by Aaron</h4>
+      <div class="header-icons">
+        <i id="minimize" class="fa fa-minus"></i>
+        <i id="quit" class="fa fa-times"></i>
       </div>
-      <div class="nav-options">
-        <i id="minimize" class="fas fa-minus" title="Minimize"></i>
-        <i id="close" class="fas fa-times" title="Close"></i>
-      </div>
-    </nav>
-    
+    </div>
     <div class="container">
+      <h4>Button</h4>
+      <button id="doSomething" class="btn">
+        Send to ipcMain & do something!
+      </button>
     </div>
 
     <script src="renderer.js"></script>
